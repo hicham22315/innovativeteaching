@@ -1,75 +1,317 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Innovative Teaching Bot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative Teaching Chatbot</title>
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 50px;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-        }
-        .container {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        h1 { 
-            color: #2c3e50; 
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #34495e;
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-        .instructions {
-            background: #f8f9fa;
             padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            text-align: left;
+        }
+        
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            opacity: 0.8;
+        }
+        
+        .chat-box {
+            height: 500px;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8f9fa;
+        }
+        
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+        }
+        
+        .user-message {
+            justify-content: flex-end;
+        }
+        
+        .bot-message {
+            justify-content: flex-start;
+        }
+        
+        .message-bubble {
+            max-width: 70%;
+            padding: 12px 18px;
+            border-radius: 18px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .user-message .message-bubble {
+            background: #007bff;
+            color: white;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .bot-message .message-bubble {
+            background: white;
+            color: #333;
+            border: 1px solid #e0e0e0;
+            border-bottom-left-radius: 5px;
+        }
+        
+        .input-container {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 10px;
+        }
+        
+        #userInput {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        #userInput:focus {
+            border-color: #007bff;
+        }
+        
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        button:hover {
+            background: #0056b3;
+        }
+        
+        .suggestions {
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+        
+        .suggestion-chip {
+            display: inline-block;
+            background: white;
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .suggestion-chip:hover {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .typing-indicator {
+            display: none;
+            padding: 10px 0;
+            font-style: italic;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🤖 Innovative Teaching Bot</h1>
-        <p>I'm an AI assistant specialized in innovative teaching methods!</p>
-        
-        <div class="instructions">
-            <h3>🚀 How to use this bot:</h3>
-            <p>1. Download the AIML file from this repository</p>
-            <p>2. Go to <a href="https://pandorabots.com">Pandorabots.com</a></p>
-            <p>3. Create a free account and upload the file</p>
-            <p>4. Start chatting with your personal teaching assistant!</p>
+    <div class="chat-container">
+        <div class="header">
+            <h1>🤖 Innovative Teaching Assistant</h1>
+            <p>Ask me anything about modern teaching methodologies</p>
         </div>
-
-        <h3>📁 Download the Bot File:</h3>
-        <a href="innovativebot.aiml" download style="
-            background: #3498db;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            display: inline-block;
-            margin: 10px;
-        ">Download innovativebot.aiml</a>
-
-        <h3>💡 Example Questions to Ask:</h3>
-        <ul style="text-align: left; display: inline-block;">
-            <li>What is gamification in education?</li>
-            <li>How do I start a flipped classroom?</li>
-            <li>What is project-based learning?</li>
-            <li>How can I use technology in teaching?</li>
-        </ul>
+        
+        <div class="chat-box" id="chatBox">
+            <div class="message bot-message">
+                <div class="message-bubble">
+                    Hello! I'm your innovative teaching assistant. I can help you with gamification, flipped classroom, project-based learning, and many other teaching methods. What would you like to know?
+                </div>
+            </div>
+        </div>
+        
+        <div class="typing-indicator" id="typingIndicator">
+            Bot is typing...
+        </div>
+        
+        <div class="suggestions">
+            <div class="suggestion-chip" onclick="askQuestion('What is gamification in education?')">What is gamification?</div>
+            <div class="suggestion-chip" onclick="askQuestion('How do I start a flipped classroom?')">Flipped classroom</div>
+            <div class="suggestion-chip" onclick="askQuestion('What is project-based learning?')">Project-based learning</div>
+            <div class="suggestion-chip" onclick="askQuestion('What are thinking routines?')">Thinking routines</div>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Type your question about teaching methods..." autocomplete="off">
+            <button onclick="sendMessage()">Send</button>
+        </div>
     </div>
+
+    <script>
+        // All your teaching responses
+        const responses = {
+            // Greetings
+            "hello": "Hello! I'm your innovative teaching assistant. How can I help you with modern pedagogies today?",
+            "hi": "Hi there! Ready to explore some exciting teaching strategies?",
+            "good morning": "Good morning! A great day for learning about innovative teaching approaches!",
+            "good afternoon": "Good afternoon! How can I assist you with teaching methods today?",
+            "good evening": "Good evening! Perfect time to reflect on innovative pedagogies.",
+            
+            // Identity
+            "who are you": "I'm Innovative Teaching, a bot specialized in innovative pedagogies and alternative teaching methods.",
+            "what is your name": "I'm Teaching Assistant Bot, but you can call me EduBot! I specialize in innovative teaching methods.",
+            "what can you do": "I can explain various teaching methods, help with classroom strategies, and suggest innovative approaches to education.",
+            
+            // Teaching Methods
+            "what is gamification": "Using game design elements like points, badges, and leaderboards in learning environments to motivate students.",
+            "what is flipped classroom": "It's a method where students learn new content at home via videos or readings and use class time for exercises and discussions.",
+            "what is project based learning": "Students gain knowledge and skills by working for an extended period to investigate and respond to a complex question or challenge.",
+            "what is cooperative learning": "Students work together in small groups to complete tasks and achieve shared learning goals.",
+            "what is differentiated instruction": "Tailoring instruction to meet individual student needs, interests, and readiness levels.",
+            "what is montessori education": "A child-centered approach that emphasizes independence, freedom within limits, and respect for a child's natural development.",
+            "what is experiential learning": "Learning through reflection on doing, such as through hands-on activities, experiments, or real-world projects.",
+            "what is design thinking": "A creative problem-solving process used to develop innovative solutions in the classroom.",
+            "what is scaffolding": "Providing temporary support to help students learn new concepts, gradually removing aid as they gain mastery.",
+            
+            // Practical Questions
+            "how can i use technology": "Through educational apps, virtual reality, online collaboration tools, and interactive platforms.",
+            "what are thinking routines": "Simple structured methods to help students develop thinking skills, such as 'See-Think-Wonder' or 'Think-Pair-Share.'",
+            "what is a makerspace": "A collaborative workspace where students can create, invent, and learn using various tools and materials.",
+            "how do i assess students": "Through rubrics, portfolios, presentations, and self-assessments that measure both process and product.",
+            "how do i start flipped classroom": "Begin by creating or curating video lessons for one unit and using class time for interactive activities.",
+            "how do i manage noisy classroom": "Set clear expectations, use signals for attention, and design activities with structured collaboration.",
+            
+            // Benefits and Challenges
+            "benefits of gamification": "Increased motivation, engagement, and a sense of achievement among students.",
+            "challenges of innovative teaching": "Time for planning, resistance to change, lack of resources, and assessment alignment.",
+            
+            // General
+            "thank you": "You're welcome! Happy to help with your teaching journey.",
+            "thanks": "My pleasure! Let me know if you have any other questions about teaching methods.",
+            "help": "I can help you learn about: flipped classroom, project-based learning, gamification, cooperative learning, and many other teaching methods.",
+            
+            // Default response
+            "default": "I'm specialized in innovative teaching methods. Could you rephrase your question about education pedagogies? Or ask me about specific methods like flipped classroom, project-based learning, or gamification."
+        };
+
+        function sendMessage() {
+            const userInput = document.getElementById('userInput');
+            const message = userInput.value.trim();
+            
+            if (message === '') return;
+            
+            addMessage(message, 'user');
+            userInput.value = '';
+            
+            // Show typing indicator
+            showTypingIndicator();
+            
+            // Simulate bot thinking
+            setTimeout(() => {
+                hideTypingIndicator();
+                const response = getBotResponse(message);
+                addMessage(response, 'bot');
+            }, 1000);
+        }
+
+        function askQuestion(question) {
+            document.getElementById('userInput').value = question;
+            sendMessage();
+        }
+
+        function addMessage(text, sender) {
+            const chatBox = document.getElementById('chatBox');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}-message`;
+            
+            const bubbleDiv = document.createElement('div');
+            bubbleDiv.className = 'message-bubble';
+            bubbleDiv.textContent = text;
+            
+            messageDiv.appendChild(bubbleDiv);
+            chatBox.appendChild(messageDiv);
+            
+            // Scroll to bottom
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function showTypingIndicator() {
+            document.getElementById('typingIndicator').style.display = 'block';
+            document.getElementById('chatBox').scrollTop = document.getElementById('chatBox').scrollHeight;
+        }
+
+        function hideTypingIndicator() {
+            document.getElementById('typingIndicator').style.display = 'none';
+        }
+
+        function getBotResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            // Check for exact matches first
+            for (const [key, response] of Object.entries(responses)) {
+                if (lowerMessage.includes(key.toLowerCase())) {
+                    return response;
+                }
+            }
+            
+            // Check for partial matches
+            const words = lowerMessage.split(' ');
+            for (const word of words) {
+                for (const [key, response] of Object.entries(responses)) {
+                    if (key.toLowerCase().includes(word) && word.length > 3) {
+                        return response;
+                    }
+                }
+            }
+            
+            return responses.default;
+        }
+
+        // Enter key support
+        document.getElementById('userInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Focus input on load
+        document.getElementById('userInput').focus();
+    </script>
 </body>
 </html>
