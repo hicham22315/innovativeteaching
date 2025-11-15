@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Conversations courantes et salutations -->
+<category>
+    <pattern>HI</pattern>
+    <template>Hello! I'm here to help you with innovative teaching methods. What would you like to know?</template>
+</category>
+
+<category>
+    <pattern>HELLO</pattern>
+    <template>Hi there! I'm your teaching assistant bot. Ask me about innovative pedagogies!</template>
+</category>
+
+<category>
+    <pattern>HEY</pattern>
+    <template>Hey! Ready to explore some exciting teaching strategies?</template>
+</category>
+
+<category>
+    <pattern>GOOD MORNING</pattern>
+    <template>Good morning! A great day for learning about new teaching approaches!</template>
+</category>
+
+<category>
+    <pattern>GOOD AFTERNOON</pattern>
+    <template>Good afternoon! How can I help you with teaching methods today?</template>
+</category>
+
+<category>
+    <pattern>GOOD EVENING</pattern>
+    <template>Good evening! Perfect time to reflect on innovative pedagogies.</template>
+</category>
+
+<!-- Questions d'identité -->
+<category>
+    <pattern>WHO ARE YOU</pattern>
+    <template>I'm Innovative Teaching, a bot specialized in innovative pedagogies and alternative teaching methods.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS YOUR NAME</pattern>
+    <template>I'm Teaching Assistant Bot, but you can call me EduBot! I specialize in innovative teaching methods.</template>
+</category>
+
+<category>
+    <pattern>WHAT CAN YOU DO</pattern>
+    <template>I can explain various teaching methods, help with classroom strategies, and suggest innovative approaches to education.</template>
+</category>
+
+<category>
+    <pattern>WHAT DO YOU DO</pattern>
+    <template>I help educators discover and implement new teaching approaches like flipped classroom, project-based learning, and more.</template>
+</category>
+
+<!-- Questions générales sur l'éducation -->
+<category>
+    <pattern>WHAT ARE INNOVATIVE PEDAGOGIES</pattern>
+    <template>They are modern teaching methods that focus on active learning, technology integration, and student-centered approaches.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS MODERN TEACHING</pattern>
+    <template>Modern teaching focuses on student-centered approaches, technology integration, and developing critical thinking skills.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS TRADITIONAL TEACHING</pattern>
+    <template>Traditional teaching typically involves teacher-centered instruction, lectures, and standardized testing.</template>
+</category>
+
+<category>
+    <pattern>WHY USE INNOVATIVE METHODS</pattern>
+    <template>Innovative methods increase student engagement, develop critical thinking, and prepare students for real-world challenges.</template>
+</category>
+
+<!-- Méthodes pédagogiques spécifiques -->
+<category>
+    <pattern>WHAT IS FLIPPED CLASSROOM</pattern>
+    <template>It's a method where students learn new content at home via videos or readings and use class time for exercises and discussions.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS PROJECT BASED LEARNING</pattern>
+    <template>Students gain knowledge and skills by working for an extended period to investigate and respond to a complex question or challenge.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS INQUIRY BASED LEARNING</pattern>
+    <template>A method where learning begins with questions, problems, or scenarios rather than simply presenting facts.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS BLENDED LEARNING</pattern>
+    <template>An approach that combines online educational materials and opportunities with traditional place-based classroom methods.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS GAMIFICATION IN EDUCATION</pattern>
+    <template>Using game design elements like points, badges, and leaderboards in learning environments to motivate students.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS COOPERATIVE LEARNING</pattern>
+    <template>Students work together in small groups to complete tasks and achieve shared learning goals.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS DIFFERENTIATED INSTRUCTION</pattern>
+    <template>Tailoring instruction to meet individual student needs, interests, and readiness levels.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS MONTESSORI EDUCATION</pattern>
+    <template>A child-centered approach that emphasizes independence, freedom within limits, and respect for a child's natural development.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE FREINET METHOD</pattern>
+    <template>A student-centered approach focusing on experiential learning, cooperation, and democratic classroom practices.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS CRITICAL PEDAGOGY</pattern>
+    <template>An approach that encourages students to question and challenge dominant beliefs and practices, especially related to power and justice.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS EXPERIENTIAL LEARNING</pattern>
+    <template>Learning through reflection on doing, such as through hands-on activities, experiments, or real-world projects.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS DESIGN THINKING IN EDUCATION</pattern>
+    <template>A creative problem-solving process used to develop innovative solutions in the classroom.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS SCAFFOLDING IN TEACHING</pattern>
+    <template>Providing temporary support to help students learn new concepts, gradually removing aid as they gain mastery.</template>
+</category>
+
+<!-- Questions pratiques pour enseignants -->
+<category>
+    <pattern>HOW CAN I USE TECHNOLOGY IN INNOVATIVE TEACHING</pattern>
+    <template>Through educational apps, virtual reality, online collaboration tools, and interactive platforms.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THINKING ROUTINES</pattern>
+    <template>Simple structured methods to help students develop thinking skills, such as "See-Think-Wonder" or "Think-Pair-Share."</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A MAKERSPACE IN EDUCATION</pattern>
+    <template>A collaborative workspace where students can create, invent, and learn using various tools and materials.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I ASSESS STUDENTS IN PROJECT BASED LEARNING</pattern>
+    <template>Through rubrics, portfolios, presentations, and self-assessments that measure both process and product.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE ROLE OF THE TEACHER IN INNOVATIVE PEDAGOGIES</pattern>
+    <template>The teacher acts as a facilitator, guide, or coach rather than a sole source of knowledge.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I START USING FLIPPED CLASSROOM</pattern>
+    <template>Begin by creating or curating video lessons for one unit and using class time for interactive activities.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE BENEFITS OF GAMIFICATION</pattern>
+    <template>Increased motivation, engagement, and a sense of achievement among students.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I MANAGE A NOISY ACTIVE LEARNING CLASSROOM</pattern>
+    <template>Set clear expectations, use signals for attention, and design activities with structured collaboration.</template>
+</category>
+
+<category>
+    <pattern>CAN INNOVATIVE METHODS BE USED IN ALL SUBJECTS</pattern>
+    <template>Yes, from math and science to languages and arts—all subjects can benefit from active and student-centered approaches.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS SOCIAL EMOTIONAL LEARNING</pattern>
+    <template>The process through which students learn to understand and manage emotions, set goals, show empathy, and maintain positive relationships.</template>
+</category>
+
+<category>
+    <pattern>HOW DOES INNOVATIVE TEACHING SUPPORT INCLUSION</pattern>
+    <template>By offering multiple ways to engage, represent content, and express learning, it meets diverse student needs.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE MICROCREDENTIALS FOR TEACHERS</pattern>
+    <template>Short, focused certifications that recognize mastery of specific skills, such as digital storytelling or PBL design.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A VIRTUAL CLASSROOM</pattern>
+    <template>An online learning environment where teachers and students interact in real time via video, chat, and shared screens.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I KEEP STUDENTS ENGAGED IN ONLINE LEARNING</pattern>
+    <template>Use interactive tools, break content into chunks, encourage collaboration, and give timely feedback.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS HEUTAGOGY</pattern>
+    <template>A self-determined learning approach where students take full responsibility for their own learning path.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS PLACE BASED EDUCATION</pattern>
+    <template>Learning that uses the local community and environment as a starting point for teaching concepts.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I ENCOURAGE CREATIVITY IN THE CLASSROOM</pattern>
+    <template>Offer open-ended projects, value diverse ideas, and create a safe space for experimentation and mistakes.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE SAMR MODEL</pattern>
+    <template>A framework for integrating technology: Substitution, Augmentation, Modification, and Redefinition.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE CHALLENGES OF INNOVATIVE TEACHING</pattern>
+    <template>Time for planning, resistance to change, lack of resources, and assessment alignment.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I GET TRAINING IN NEW PEDAGOGIES</pattern>
+    <template>Through online courses, teacher communities, workshops, and education conferences.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS UNPLUGGED LEARNING</pattern>
+    <template>Teaching without digital devices, focusing on hands-on, tactile, and interpersonal activities.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I EVALUATE THE SUCCESS OF AN INNOVATIVE METHOD</pattern>
+    <template>Through student feedback, engagement metrics, learning outcomes, and self-reflection.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A DIGITAL BADGE</pattern>
+    <template>A visual symbol that represents a skill or achievement, often used in gamified or competency-based learning.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS IMMERSIVE LEARNING</pattern>
+    <template>Learning through simulated or augmented environments that create a sense of "being there."</template>
+</category>
+
+<category>
+    <pattern>WHAT IS SLOW EDUCATION</pattern>
+    <template>An approach that emphasizes depth over breadth, curiosity, and meaningful learning experiences.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I BUILD A COLLABORATIVE CLASSROOM CULTURE</pattern>
+    <template>Model respectful communication, assign roles in group work, and celebrate team successes.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS OPEN ENDED QUESTIONING</pattern>
+    <template>Questions that encourage deeper thinking and multiple possible answers rather than a single right response.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A GENIUS HOUR</pattern>
+    <template>A time when students explore their own passions and create self-directed projects.</template>
+</category>
+
+<category>
+    <pattern>HOW CAN I USE STORYTELLING IN TEACHING</pattern>
+    <template>To contextualize concepts, build empathy, and make content more memorable and engaging.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS MINDFULNESS IN EDUCATION</pattern>
+    <template>Practices that help students focus attention, manage stress, and develop self-awareness.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A GROWTH MINDSET</pattern>
+    <template>The belief that abilities can be developed through dedication and hard work.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I GIVE EFFECTIVE FEEDBACK IN ACTIVE LEARNING</pattern>
+    <template>Make it timely, specific, and constructive, focusing on effort and strategies rather than just correctness.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS PEER INSTRUCTION</pattern>
+    <template>Students teaching and explaining concepts to each other to deepen understanding.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS A CLASSROOM WITHOUT WALLS</pattern>
+    <template>Learning that happens beyond the physical classroom—outdoors, in the community, or through virtual experiences.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS CULTURALLY RESPONSIVE TEACHING</pattern>
+    <template>An approach that recognizes the importance of including students' cultural references in all aspects of learning.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS THE ROLE OF PLAY IN LEARNING</pattern>
+    <template>Play encourages exploration, creativity, and social skills, making it vital especially in early education.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS AUTHENTIC ASSESSMENT</pattern>
+    <template>Evaluating students through real-world tasks that demonstrate meaningful application of knowledge.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I START A MAKERSPACE</pattern>
+    <template>Begin with low-cost materials, seek donations, and let student interests guide projects.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS STEAM EDUCATION</pattern>
+    <template>An approach that integrates Science, Technology, Engineering, Arts, and Mathematics.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE THE KEY PRINCIPLES OF INNOVATIVE TEACHING</pattern>
+    <template>Student-centeredness, flexibility, real-world relevance, collaboration, and continuous reflection.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS LIFELONG LEARNING</pattern>
+    <template>The ongoing, voluntary, and self-motivated pursuit of knowledge for personal or professional reasons.</template>
+</category>
+
+<category>
+    <pattern>HOW DO I INSPIRE MY STUDENTS TO LOVE LEARNING</pattern>
+    <template>By being passionate yourself, offering choice, making it relevant, and creating a positive and supportive environment.</template>
+</category>
+
+<!-- Questions de conversation générale -->
+<category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>I'm doing great! Ready to help you with teaching strategies. How can I assist you today?</template>
+</category>
+
+<category>
+    <pattern>THANKS</pattern>
+    <template>You're welcome! Happy to help with your teaching journey.</template>
+</category>
+
+<category>
+    <pattern>THANK YOU</pattern>
+    <template>My pleasure! Let me know if you have any other questions about teaching methods.</template>
+</category>
+
+<category>
+    <pattern>BYE</pattern>
+    <template>Goodbye! Hope to see you again soon with more teaching questions!</template>
+</category>
+
+<category>
+    <pattern>GOODBYE</pattern>
+    <template>Farewell! Keep innovating in your teaching practice!</template>
+</category>
+
+<category>
+    <pattern>SEE YOU LATER</pattern>
+    <template>See you! Don't hesitate to come back with more questions about pedagogy.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS YOUR PURPOSE</pattern>
+    <template>I'm designed to help educators discover and implement innovative teaching methods that engage students and enhance learning.</template>
+</category>
+
+<category>
+    <pattern>HELP</pattern>
+    <template>I can help you learn about: flipped classroom, project-based learning, gamification, cooperative learning, and many other teaching methods. What would you like to know?</template>
+</category>
+
+<category>
+    <pattern>WHAT CAN YOU HELP ME WITH</pattern>
+    <template>I can explain teaching methods, suggest classroom strategies, discuss educational theories, and help you implement innovative approaches in your teaching practice.</template>
+</category>
+
+<!-- Questions sur les ressources -->
+<category>
+    <pattern>WHERE CAN I FIND RESOURCES</pattern>
+    <template>You can find resources on educational websites, teacher communities, professional development platforms, and educational technology tools.</template>
+</category>
+
+<category>
+    <pattern>RECOMMEND SOME TOOLS</pattern>
+    <template>For innovative teaching, consider tools like Kahoot, Padlet, Nearpod, Google Classroom, and various LMS platforms.</template>
+</category>
+
+<category>
+    <pattern>WHAT ARE GOOD WEBSITES FOR TEACHERS</pattern>
+    <template>Edutopia, TeachThought, Cult of Pedagogy, and professional teaching associations offer great resources for innovative methods.</template>
+</category>
+
+<!-- Catégorie par défaut pour les questions non reconnues -->
+<category>
+    <pattern>*</pattern>
+    <template>I'm specialized in innovative teaching methods. Could you rephrase your question about education pedagogies? Or ask me about specific methods like flipped classroom, project-based learning, or gamification.</template>
+</category>
+
+</aiml>
